@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_674dc57b6e1f4a0286c99ee87cbc0a98 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_674dc57b6e1f4a0286c99ee87cbc0a98" ></div>
+        
+</body>
+<script>    
+    
+            var map_674dc57b6e1f4a0286c99ee87cbc0a98 = L.map(
+                "map_674dc57b6e1f4a0286c99ee87cbc0a98",
+                {
+                    center: [45.5236, -122.675],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ef10402c41384b138040d615e1d1c686 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_674dc57b6e1f4a0286c99ee87cbc0a98);
+        
+    
+            var marker_477bd1c7d80f40ffbbd40aca983740ea = L.marker(
+                [45.5236, -122.675],
+                {}
+            ).addTo(map_674dc57b6e1f4a0286c99ee87cbc0a98);
+        
+    
+            var icon_bdcd9d460b1642fabdf6f28253013efa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_477bd1c7d80f40ffbbd40aca983740ea.setIcon(icon_bdcd9d460b1642fabdf6f28253013efa);
+        
+    
+        var popup_825a768d3ba44820bada2edbf77365ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dffa623069d641c1a86ea13aa1c2f2bb = $(`<div id="html_dffa623069d641c1a86ea13aa1c2f2bb" style="width: 100.0%; height: 100.0%;">The Waterfront</div>`)[0];
+            popup_825a768d3ba44820bada2edbf77365ea.setContent(html_dffa623069d641c1a86ea13aa1c2f2bb);
+        
+
+        marker_477bd1c7d80f40ffbbd40aca983740ea.bindPopup(popup_825a768d3ba44820bada2edbf77365ea)
+        ;
+
+        
+    
+    
+            var circle_marker_076ddb462b344caa961c7aed06bc1a25 = L.circleMarker(
+                [45.5236, -122.675],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_674dc57b6e1f4a0286c99ee87cbc0a98);
+        
+    
+        var popup_fdf8e3c376184dbc98b7a9deb29eda3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e951c1405ca64836a1884787d5338813 = $(`<div id="html_e951c1405ca64836a1884787d5338813" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>`)[0];
+            popup_fdf8e3c376184dbc98b7a9deb29eda3b.setContent(html_e951c1405ca64836a1884787d5338813);
+        
+
+        circle_marker_076ddb462b344caa961c7aed06bc1a25.bindPopup(popup_fdf8e3c376184dbc98b7a9deb29eda3b)
+        ;
+
+        
+    
+</script>
