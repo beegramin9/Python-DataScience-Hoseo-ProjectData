@@ -35,7 +35,6 @@ BORDER_LINES = [
     [(27, 5), (27, 6), (25, 6)],
 ]
 
-
 def drawKorea(targetData, blockedMap, cmapname):
 
     whitelabelmin = (max(
@@ -55,6 +54,7 @@ def drawKorea(targetData, blockedMap, cmapname):
 
     # 지역 이름 표시
     for idx, row in blockedMap.iterrows():
+        idx
         # 띄어쓰기를 \n로 바꾸기.
         if len(row['ID'].split()) == 2:
             dispname = f'{row.ID.split()[0]}\n{row.ID.split()[1]}'
